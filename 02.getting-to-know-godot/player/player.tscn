@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dds7yrrx56gcy"]
+[gd_scene load_steps=13 format=3 uid="uid://dds7yrrx56gcy"]
 
 [ext_resource type="Script" path="res://player/godot_armor.gd" id="1"]
 [ext_resource type="Script" path="res://player/player.gd" id="2"]
@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dekkcmj408pvt" path="res://player/hand_fire.png" id="5"]
 [ext_resource type="PackedScene" path="res://common/shadow.tscn" id="6"]
 [ext_resource type="Script" path="res://player/weapon_pivot.gd" id="7"]
+[ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://levels/rooms/room_a.tscn" id="8_px10b"]
+[ext_resource type="PackedScene" uid="uid://dgayuh42w4v6u" path="res://levels/rooms/room_b.tscn" id="9_6hob4"]
+[ext_resource type="PackedScene" uid="uid://cq0mmphkbrvmm" path="res://levels/rooms/room_c.tscn" id="10_g1gfi"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 19.0754
@@ -21,7 +24,7 @@ script = ExtResource("2")
 
 [node name="GodotArmor" type="Sprite2D" parent="."]
 z_index = 2
-position = Vector2(-0.474655, 0)
+position = Vector2(22, 30)
 texture = ExtResource("3")
 offset = Vector2(0.474655, -40.5866)
 script = ExtResource("1")
@@ -68,5 +71,14 @@ shape = SubResource("2")
 position = Vector2(0, 34.4444)
 
 [node name="DamageAudio" type="AudioStreamPlayer2D" parent="."]
+
+[node name="RoomA" parent="." instance=ExtResource("8_px10b")]
+position = Vector2(-1536, -1152)
+
+[node name="RoomB" parent="." instance=ExtResource("9_6hob4")]
+position = Vector2(384, 128)
+
+[node name="RoomC" parent="." instance=ExtResource("10_g1gfi")]
+position = Vector2(256, -1920)
 
 [connection signal="area_entered" from="ExitDetector2D" to="." method="_on_ExitDetector2D_area_entered"]
