@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5aft6fdror7s"
-path="res://.godot/imported/ship_side_flame_sdf.png-51da19871b880d6639ab4d7f802ead16.ctex"
+uid="uid://bkueifls7csiy"
+path="res://.godot/imported/ellipse_white.png-e094ed2971ae109b02bccf991a9a215b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ship/side_thruster/ship_side_flame_sdf.png"
-dest_files=["res://.godot/imported/ship_side_flame_sdf.png-51da19871b880d6639ab4d7f802ead16.ctex"]
+source_file="res://practice_assets/ellipse_white.png"
+dest_files=["res://.godot/imported/ellipse_white.png-e094ed2971ae109b02bccf991a9a215b.ctex"]
 
 [params]
 

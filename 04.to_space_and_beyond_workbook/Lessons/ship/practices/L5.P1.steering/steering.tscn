@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://ch2t1ed7rwag1"]
+[gd_scene load_steps=8 format=3]
 
-[ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://practice_assets/shape_ship.png" id="1_ghq41"]
-[ext_resource type="Script" path="res://addons/gdquest_practice_framework/practice_solutions/L5.P1.steering/steering.gd" id="2_007k5"]
-[ext_resource type="Texture2D" uid="uid://bkueifls7csiy" path="res://practice_assets/ellipse_white.png" id="3_whbnj"]
-[ext_resource type="Texture2D" uid="uid://ci5b253al1tus" path="res://practice_assets/ellipse_yellow.png" id="4_dpssk"]
+[ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://practice_assets/shape_ship.png" id="1_43x22"]
+[ext_resource type="Script" path="res://Lessons/ship/practices/L5.P1.steering/steering.gd" id="2_fdpd8"]
+[ext_resource type="Texture2D" uid="uid://bkueifls7csiy" path="res://practice_assets/ellipse_white.png" id="3_ovrv2"]
+[ext_resource type="Texture2D" uid="uid://ci5b253al1tus" path="res://practice_assets/ellipse_yellow.png" id="4_q4dmt"]
 
 [sub_resource type="Curve" id="Curve_p40xv"]
 _data = [Vector2(0, 0.663194), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.0319997, 0.0, 0, 0]
@@ -20,15 +20,15 @@ scale_curve = SubResource("CurveTexture_wu7u1")
 
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(960, 540)
-texture = ExtResource("1_ghq41")
-script = ExtResource("2_007k5")
+texture = ExtResource("1_43x22")
+script = ExtResource("2_fdpd8")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 modulate = Color(0.584314, 0.380392, 0.933333, 1)
 show_behind_parent = true
 z_index = -2
 process_material = SubResource("ParticleProcessMaterial_rwfi4")
-texture = ExtResource("3_whbnj")
+texture = ExtResource("3_ovrv2")
 visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 
 [node name="ExtraVisuals" type="Node" parent="."]
@@ -37,9 +37,9 @@ visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 top_level = true
 z_index = -1
 position = Vector2(960, 540)
-texture = ExtResource("4_dpssk")
+texture = ExtResource("4_q4dmt")
 
-[node name="ColorRect" type="ColorRect" parent="ExtraVisuals" groups=["GDFExcludeVisibility"]]
+[node name="ColorRect" type="ColorRect" parent="ExtraVisuals"]
 z_index = -3
 anchors_preset = 15
 anchor_right = 1.0

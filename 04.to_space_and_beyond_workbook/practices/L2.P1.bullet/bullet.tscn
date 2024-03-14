@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://bkhwxgkb70wo2"]
 
-[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="1_rwnj6"]
-[ext_resource type="Script" path="res://practices/L2.P1.bullet/bullet.gd" id="2_371po"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="3_q7var"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_yellow.png" id="4_7gjbg"]
+[ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://practice_assets/shape_ship.png" id="1_yc2vc"]
+[ext_resource type="Script" path="res://practices/L2.P1.bullet/bullet.gd" id="2_d20rm"]
+[ext_resource type="Texture2D" uid="uid://bkueifls7csiy" path="res://practice_assets/ellipse_white.png" id="3_ftnwr"]
+[ext_resource type="Texture2D" uid="uid://ci5b253al1tus" path="res://practice_assets/ellipse_yellow.png" id="4_y4tch"]
 
 [sub_resource type="Curve" id="Curve_awpf5"]
 _data = [Vector2(0, 0.663194), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.0319997, 0.0, 0, 0]
@@ -20,16 +20,16 @@ scale_curve = SubResource("CurveTexture_wu7u1")
 
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(960, 540)
-texture = ExtResource("1_rwnj6")
+texture = ExtResource("1_yc2vc")
 offset = Vector2(10, 0)
-script = ExtResource("2_371po")
+script = ExtResource("2_d20rm")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 modulate = Color(0.584314, 0.380392, 0.933333, 1)
 show_behind_parent = true
 z_index = -2
 process_material = SubResource("ParticleProcessMaterial_klgyb")
-texture = ExtResource("3_q7var")
+texture = ExtResource("3_ftnwr")
 visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 
 [node name="ExtraVisuals" type="Node" parent="."]
@@ -38,7 +38,7 @@ visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 top_level = true
 z_index = -1
 position = Vector2(960, 540)
-texture = ExtResource("4_7gjbg")
+texture = ExtResource("4_y4tch")
 
 [node name="ColorRect" type="ColorRect" parent="ExtraVisuals"]
 z_index = -3

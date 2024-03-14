@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccaltbfx5mgyo"
-path="res://.godot/imported/ship_layers.png-2934631955e50609377cf949c3cc3915.ctex"
+uid="uid://b4eivixs3nn3n"
+path="res://.godot/imported/spark.png-4212904c9ef9431c0a235d51d9c9a847.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ship/ship_layers.png"
-dest_files=["res://.godot/imported/ship_layers.png-2934631955e50609377cf949c3cc3915.ctex"]
+source_file="res://Lessons/ship/spark.png"
+dest_files=["res://.godot/imported/spark.png-4212904c9ef9431c0a235d51d9c9a847.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
